@@ -13,7 +13,25 @@
 		08A1280F2458A05F00875014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A1280D2458A05F00875014 /* Main.storyboard */; };
 		08A128112458A06300875014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A128102458A06300875014 /* Assets.xcassets */; };
 		08A128142458A06300875014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A128122458A06300875014 /* LaunchScreen.storyboard */; };
+		08A1287D2458B3FA00875014 /* AdMobLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A1287C2458B3FA00875014 /* AdMobLib.framework */; };
+		08A1287E2458B3FB00875014 /* AdMobLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08A1287C2458B3FA00875014 /* AdMobLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08D1586D245A23C6009CF729 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1586C245A23C6009CF729 /* RoundedButton.swift */; };
+		08DB4F332459FD4700DCDC9E /* ViewController+SSMMobileAdsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB4F322459FD4700DCDC9E /* ViewController+SSMMobileAdsProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08A128602458AE1700875014 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08A1287E2458B3FB00875014 /* AdMobLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08A128042458A05F00875014 /* AdMobApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdMobApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +42,9 @@
 		08A128102458A06300875014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08A128132458A06300875014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08A128152458A06300875014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A1287C2458B3FA00875014 /* AdMobLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AdMobLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D1586C245A23C6009CF729 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		08DB4F322459FD4700DCDC9E /* ViewController+SSMMobileAdsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SSMMobileAdsProtocol.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A1287D2458B3FA00875014 /* AdMobLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +64,8 @@
 			children = (
 				08A128062458A05F00875014 /* AdMobApp */,
 				08A128052458A05F00875014 /* Products */,
+				08DB4F34245A221D00DCDC9E /* Custom */,
+				08A1281B2458A76C00875014 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +83,29 @@
 				08A128072458A05F00875014 /* AppDelegate.swift */,
 				08A128092458A05F00875014 /* SceneDelegate.swift */,
 				08A1280B2458A05F00875014 /* ViewController.swift */,
+				08DB4F322459FD4700DCDC9E /* ViewController+SSMMobileAdsProtocol.swift */,
 				08A1280D2458A05F00875014 /* Main.storyboard */,
 				08A128102458A06300875014 /* Assets.xcassets */,
 				08A128122458A06300875014 /* LaunchScreen.storyboard */,
 				08A128152458A06300875014 /* Info.plist */,
 			);
 			path = AdMobApp;
+			sourceTree = "<group>";
+		};
+		08A1281B2458A76C00875014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08A1287C2458B3FA00875014 /* AdMobLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08DB4F34245A221D00DCDC9E /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				08D1586C245A23C6009CF729 /* RoundedButton.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +118,7 @@
 				08A128002458A05F00875014 /* Sources */,
 				08A128012458A05F00875014 /* Frameworks */,
 				08A128022458A05F00875014 /* Resources */,
+				08A128602458AE1700875014 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,8 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A1280C2458A05F00875014 /* ViewController.swift in Sources */,
+				08D1586D245A23C6009CF729 /* RoundedButton.swift in Sources */,
 				08A128082458A05F00875014 /* AppDelegate.swift in Sources */,
 				08A1280A2458A05F00875014 /* SceneDelegate.swift in Sources */,
+				08DB4F332459FD4700DCDC9E /* ViewController+SSMMobileAdsProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R5G6W6XY9;
 				INFOPLIST_FILE = AdMobApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R5G6W6XY9;
 				INFOPLIST_FILE = AdMobApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
