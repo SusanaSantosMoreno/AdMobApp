@@ -41,8 +41,8 @@ In the file it will be necessary to change the kGADSimulatorID for your device I
 You can get the id of your device in XCode, after linking it, in the simulators panel, in the device tab.
 
 For the application to run on a real device, it is necessary to apply a requirement.
-A version of IOS equal to or greater than 13 is required. There are several bugs in version 13.3, 
-so it is recommended to use a version of IOS from 13.4.
+A version of iOS equal to or greater than 13 is required. There are several bugs in version 13.3, 
+so it is recommended to use a version of iOS from 13.4.
   
 ## Configure the add types
 
